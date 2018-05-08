@@ -16,6 +16,10 @@
 				<a href="paginaprincipal.php">Group Trip</a>
 				<a href="#" class="btn-menu"><i class="fas fa-bars"></i></a> 
 			</div>
+			<div class="enlaces">
+				<a href="preguntasfrecuentes.php"><i class="fa fa-question-circle" aria-hidden="true"></i>Preguntas Frecuentes</a>
+				
+			</div>
 			
 		</header>
 		
