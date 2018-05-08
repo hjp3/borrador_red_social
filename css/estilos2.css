@@ -1,0 +1,266 @@
+*{
+	margin: 0;   	/*eliminamos los márgenes y rellenos de los navegadores*/
+	padding: 0;
+	box-sizing: border-box;   /*que las medidas se adapten a la pantalla*/
+}
+
+.btn{
+	background-color: #e65c00;
+	color: #fff;
+	display: inline-block;    /*para poder trabajar el tamaño*/
+	margin: 10px;
+	padding: 10px 0;
+	text-align: center;
+	width: 100px;
+	text-decoration: none;
+	box-shadow: 0px 3px 0px #373c3c;   /*le ponemos un poco de sombra*/ 
+	border-radius: 50px;
+	
+}
+
+
+
+.btn-menu{
+	display: none;    /*ocultamos el menu para los dispositivos grandes*/
+	color: white;
+	text-decoration: none;	
+	font-size: 1em; 
+}
+
+.contenedor{     /*el padre de todos los elementos*/
+	max-width: 1200px;
+	width: 95%;			/*le ponemos un ancho por las dudas*/
+	margin: auto;	/*centramos el contenido*/
+
+	display: flex;
+	flex-direction: row;	/*el eje principal va a ser el horizontal*/ 
+	flex-wrap: wrap;		/*se va a respetar la dimensiones de los hijos*/
+}
+
+aside{
+ 	background: greenyellow;
+ 	padding: 20px;	
+
+ 	flex: 1 1 20%;    /*este elemento ocupará el 30% del espacio del padre*/
+
+ 	display: flex;   
+	flex-wrap: wrap;   /*los hijos respetarán su medida*/
+	justify-content: flex-start;
+	flex-direction: column;
+
+}
+
+aside .registrado{
+	background: lawngreen;
+	margin: 10px;
+}
+
+aside .registrarse{
+	background: lawngreen;
+	margin: 10px;
+}
+
+div .enlaces{
+	width: 50%;    /*al contenedor de enlaces le decimos que ocupe la mitad de la cabecera*/
+
+	display: flex;    /*va a ser un elemento padre de los enlaces*/
+	flex-wrap: wrap;
+	align-items: center;   /*centramos verticalmente a los hijos*/
+}
+
+div .enlaces a{
+	color: #fff;   /*le damos un color blanco a los enlaces*/
+	text-align: center;   /*centramos al texto*/
+	text-decoration: none;
+	padding: 10px;
+	font-size: 1.3em;
+
+	flex-grow: 1;	/*para que abarque todo su contenedor*/
+}
+
+div .enlaces a:hover{
+	color:  #e65c00;   /*le invertimos los colores a los enlaces en el hoover*/
+	background: #fff;
+}
+
+div .enlaces a i{
+	margin-right: 3px;   /*le ponemos un poco de margen a los íconos*/
+}
+
+form.registro{
+	padding: 20px 0px; 
+	width: 80%;
+	border: 1px solid #ccc;
+
+}
+
+
+form.registro input{
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding: 10px;       /*espaciado interno*/
+	width: 80%;
+	box-sizing: border-box;    /*van a medir 100% y el paddin no se cuenta*/
+}
+
+form.registro input:focus{
+	border: 1px solid deeppink;   /*le ponemos nuestro propio focus*/
+}
+
+
+form.registro label{
+	display: block;    /*para que se pongan arriba de los input*/
+	padding-left: 20px;
+}
+
+
+
+footer{
+	background-color: #e65c00;
+	width: 100%;
+	padding: 20px;
+
+	display: flex;						
+	flex-wrap: wrap;
+	justify-content: space-between;		/*los hijos del footer estarán separadas*/
+}
+
+footer .copyright{
+	color: white;
+	line-height: 50px;
+	text-align: center;
+}
+
+footer .redsocial{
+	width: 40%;    /*al contenedor de enlaces le decimos que ocupe la mitad de la cabecera*/
+
+	display: flex;    /*va a ser un elemento padre de los enlaces*/
+	flex-wrap: wrap;
+	align-items: center;   /*centramos verticalmente a los hijos*/
+}
+
+footer .redsocial a{
+	color: #fff;   /*le damos un color blanco a los enlaces*/
+	text-align: center;   /*centramos al texto*/
+	text-decoration: none;
+	padding: 10px;
+	font-size: 1em;
+
+	flex-grow: 1;	/*para que abarque todo su contenedor*/
+}
+
+footer .redsocial a:hover{
+	color:  #e65c00;   /*le invertimos los colores a los enlaces en el hoover*/
+	background: #fff;
+}
+
+footer .redsocial a i{
+	margin-right: 3px;   /*le ponemos un poco de margen a los íconos*/
+}
+
+header{
+	background-color: #e65c00;
+	width: 100%;   /*abarque todo el ancho del documento*/
+	padding: 20px;
+
+	display: flex;    /*a su vez, los elementos que estén en header serán configurados con flex*/ 
+	justify-content: space-between;  /*ponemos a los hijos separados*/
+	align-items: center;	/*los alineamos verticalmente*/
+	flex-wrap: wrap;	/*si no entran los hijos que vayan para abajo con el responsive design*/
+}
+
+header .logo{
+	color: #fff;
+	font-size: 30px;   /*le ponemos tamaño y color a la letra*/
+}
+
+header .logo img{
+	width: 50px;	/*le ponemos un ancho de 50px*/
+	vertical-align: top;	
+}
+
+header .logo a{
+	color: #fff;			/*le ponemos color y le sacamos estilo al título del logo*/
+	text-decoration: none;
+	line-height: 50px;      /*ponemos la altura igual que el logo, queda centrado*/
+}
+
+header .logo a:hover{
+	color:  #e65c00;   /*le invertimos los colores a los enlaces en el hoover*/
+	background: #fff;
+}
+
+
+h1{
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-size: 2em;
+}
+
+main{
+	padding: 20px;
+
+	flex: 1 1 80%; 	/*este elemento ocupará el 85% del espacio del padre*/
+}
+
+main article{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	
+}
+  
+main article:nth-last-child{     /*por si hay dos artículos*/
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+p{
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+
+@media screen and (max-width: 700px) { 
+	.contenedor{					/*cuando llegue a un dispositivo */
+		flex-direction: column;	     /*los elementos pasan de fila a columna*/
+									/*el aside pasa abajo*/
+	}
+
+	header{
+		flex-direction: column;		/*ponemos al header direccionado como columna*/
+		padding: 0;					/*eliminamos el margen interior*/
+    }
+
+    header .logo{
+    	margin: 20px 0;        /*le ponemos un margen arriba y abajo para que separe al logo*/
+    	margin-left: 10px;
+    	
+    }
+
+    div .enlaces{
+    	width: 100%; 		/*que los enlaces de la cabecera ocupen el 100%*/
+    } 
+
+    aside{
+    	flex-direction: row;	/*ponemos en filas para que no quede tanto espacio en blanco*/
+    	flex: 0; 				/*para que no se agranden ni achiquen los elementos*/
+    }
+
+    aside .registrado{
+    	flex: 1 1 70%;    /*para que en la fila ocupe el 70% fila*/
+    }
+
+    aside .registrarse{		/*para que ocupe el 30% de la fila*/
+    	flex: 1 1 30%;
+    }
+
+}
+
+@media screen and (max-width: 500px) { 
+	aside{
+		flex-direction: column;
+	}
+}
