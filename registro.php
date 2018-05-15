@@ -22,7 +22,7 @@
 		<main>
 			<article>
 				<h1>Formulario de Registro</h1>
-				<form class="registro" method="post" action="bienvenida.php">
+				<form class="registro" method="post" action="usuario.php">
 			        <h2 >Registrarse en Group Trip</h2>
 			        <label for="nombrecompleto">Nombre Completo</label>
 			        <input type="text" id="nombrecompleto" name="nombre" placeholder="Nombre Completo" required autofocus>
@@ -48,7 +48,7 @@
 		
 		<aside>
 			<div class="registrado">
-				<form class="" method="post" action="bienvenida.php">
+				<form class="" method="post" action="usuario.php">
 			        <h2 >Login</h2>
 			        <label for="inputEmail" >Usuario</label>
 			        <input type="text" id="inputEmail" name="usuario" placeholder="Usuario" pattern="[A-Za-z_-0-9]{1,20}" required autofocus>

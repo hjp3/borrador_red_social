@@ -16,10 +16,7 @@
 				<a href="paginaprincipal.php">Group Trip</a>
 				<a href="#" class="btn-menu"><i class="fas fa-bars"></i></a> 
 			</div>
-			<div class="enlaces">
-				<a href="#"><i class="fa fa-binoculars" aria-hidden="true"></i>Búsqueda Palabra Clave</a><input type="text" id="frecuentes" name="frecuentes"  placeholder="palabra buscada"  autofocus>
-				
-			</div>
+			
 			
 
 			
@@ -53,7 +50,7 @@
 		
 		<aside>
 			<div class="registrado">
-				<form class="" method="post" action="bienvenida.php">
+				<form class="" method="post" action="usuario.php">
 			        <h2 >Login</h2>
 			        <label for="inputEmail" >Usuario</label>
 			        <input type="text" id="inputEmail" name="usuario" placeholder="Usuario" pattern="[A-Za-z_-0-9]{1,20}" required autofocus>
